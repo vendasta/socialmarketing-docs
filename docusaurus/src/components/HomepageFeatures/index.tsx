@@ -40,36 +40,6 @@ const FeatureList: FeatureItem[] = [
       </>
     ),
   },
-  {
-    title: 'ROI Reporting',
-    emoji: '📊',
-    description: (
-      <>
-        Show ROI by reporting on key social media metrics. Track performance, 
-        engagement, and conversion data to demonstrate value to clients.
-      </>
-    ),
-  },
-  {
-    title: 'Multi-Location Management',
-    emoji: '🏢',
-    description: (
-      <>
-        Perfect for franchises and multi-location businesses. Post to any number 
-        of locations using dynamic content and easy customization.
-      </>
-    ),
-  },
-  {
-    title: 'White-Label Solution',
-    emoji: '🎨',
-    description: (
-      <>
-        Resell social media management software under your own brand. Build client 
-        trust with a platform branded as your own while reselling additional products.
-      </>
-    ),
-  },
 ];
 
 function Feature({title, emoji, description}: FeatureItem) {
