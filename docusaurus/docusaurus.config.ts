@@ -45,6 +45,7 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
+          // editUrl: 'https://github.dev/vendasta/socialmarketing-docs',
           routeBasePath: '/',
         },
         blog: false,
