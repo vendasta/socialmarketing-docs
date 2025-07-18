@@ -15,8 +15,8 @@ const FeatureList: FeatureItem[] = [
     emoji: '📱',
     description: (
       <>
-        Post once, publish to many client social media accounts. Manage Instagram, 
-        Facebook, Google Business, X (Twitter), LinkedIn, TikTok, and YouTube from one dashboard.
+        Post once, publish to many social media accounts. Manage Instagram, 
+        Facebook, Google Business Profile, X, LinkedIn, and TikTok from one dashboard.
       </>
     ),
   },
