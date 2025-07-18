@@ -34,7 +34,7 @@ export default function Home(): ReactNode {
   return (
     <Layout
       title={siteConfig.title}
-      description="White-label social media management software to scale your social marketing solutions with AI. Manage thousands of client accounts and streamline workflows.">
+      description="AI-Powered Social Media Management Software to scale your social marketing solutions with AI. Manage thousands of client accounts and streamline workflows.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
