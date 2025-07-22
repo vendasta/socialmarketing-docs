@@ -35,8 +35,8 @@ const FeatureList: FeatureItem[] = [
     emoji: '📈',
     description: (
       <>
-        Help clients grow their audience and build fans. Boost client sales with 
-        easy-to-use shoppable bios and engagement features.
+        Grow your audience and build fans. Monitor engagement and post performance 
+        to create a content strategy that works.
       </>
     ),
   },
