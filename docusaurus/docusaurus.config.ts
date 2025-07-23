@@ -7,7 +7,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'Social Marketing',
   tagline: 'AI-Powered Social Media Management Software',
-  favicon: 'img/logo.svg',
+  favicon: 'img/social-logo.png',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
