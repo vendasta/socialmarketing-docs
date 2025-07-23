@@ -1,8 +1,9 @@
 .features {
   display: flex;
   align-items: center;
-  padding: 4rem 0;
+  padding: 6rem 0;
   width: 100%;
+  min-height: 60vh;
   background-color: var(--ifm-color-emphasis-100);
 }
 
