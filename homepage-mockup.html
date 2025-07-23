@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Marketing - Homepage Mockup</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            /* Keep original green primary colors from Docusaurus */
+            --ifm-color-primary: #2e8555;
+            --ifm-color-primary-dark: #29784c;
+            --ifm-color-primary-darker: #277148;
+            --ifm-color-primary-darkest: #205d3b;
+            --ifm-color-primary-light: #33925d;
+            --ifm-color-primary-lighter: #359962;
+            --ifm-color-primary-lightest: #3cad6e;
+            
+            /* Replace navy with Social Marketing blue #33ACE2 */
+            --sm-hero-bg: #33ACE2;
+            --sm-hero-bg-dark: #2a8bc4;
+            --sm-hero-bg-darker: #267bb5;
+            --sm-hero-bg-light: #52bbea;
+            --sm-hero-bg-lighter: #6bc4ed;
+            
+            /* Text colors */
+            --text-primary: #1a202c;
+            --text-secondary: #4a5568;
+            --text-light: #ffffff;
+            --background: #ffffff;
+            --background-secondary: #f7fafc;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--text-primary);
+            background: var(--background);
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            background: var(--background);
+            border-bottom: 1px solid #e2e8f0;
+            padding: 0.75rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .navbar-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            text-decoration: none;
+        }
+
+        .logo {
+            width: 32px;
+            height: 32px;
+            margin-right: 0.75rem;
+        }
+
+        .navbar-nav {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .nav-link {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .nav-link:hover {
+            color: var(--ifm-color-primary);
+        }
+
+        .search-box {
+            padding: 0.5rem 1rem;
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+            background: white;
+            min-width: 200px;
+        }
+
+        /* Hero Section - Primary change: navy replaced with #33ACE2 */
+        .hero {
+            background: linear-gradient(135deg, var(--sm-hero-bg) 0%, var(--sm-hero-bg-light) 100%);
+            color: var(--text-light);
+            text-align: center;
+            padding: 4rem 1rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+            opacity: 0.3;
+        }
+
+        .hero-container {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .hero-subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 2.5rem;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+
+        .hero-button {
+            display: inline-block;
+            background: #1a365d;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(26, 54, 93, 0.3);
+        }
+
+        .hero-button:hover {
+            background: #2c5282;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(26, 54, 93, 0.4);
+        }
+
+        /* Features Section */
+        .features {
+            padding: 4rem 1rem;
+            background: var(--background-secondary);
+        }
+
+        .features-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            margin-top: 2rem;
+        }
+
+        .feature-card {
+            text-align: center;
+            padding: 2rem;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            border: 1px solid #e2e8f0;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            border-color: var(--ifm-color-primary-light);
+        }
+
+        .feature-emoji {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .feature-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .feature-description {
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        .footer {
+            background: #2d3748;
+            color: var(--text-light);
+            padding: 3rem 1rem 2rem;
+            text-align: center;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-links {
+            margin-bottom: 2rem;
+        }
+
+        .footer-link {
+            color: var(--sm-hero-bg-light);
+            text-decoration: none;
+            margin: 0 1rem;
+            transition: color 0.2s;
+        }
+
+        .footer-link:hover {
+            color: var(--sm-hero-bg-lighter);
+        }
+
+        .footer-copyright {
+            opacity: 0.8;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .hero {
+                padding: 3rem 1rem;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .navbar-nav {
+                gap: 1rem;
+            }
+            
+            .search-box {
+                min-width: 150px;
+            }
+        }
+
+        /* Dark theme */
+        [data-theme='dark'] {
+            --background: #1a202c;
+            --background-secondary: #2d3748;
+            --text-primary: #f7fafc;
+            --text-secondary: #cbd5e0;
+        }
+
+        [data-theme='dark'] body {
+            background: var(--background);
+        }
+
+        [data-theme='dark'] .navbar {
+            background: var(--background);
+            border-bottom-color: #4a5568;
+        }
+
+        [data-theme='dark'] .feature-card {
+            background: #2d3748;
+            border-color: #4a5568;
+        }
+
+        [data-theme='dark'] .search-box {
+            background: #2d3748;
+            border-color: #4a5568;
+            color: var(--text-primary);
+        }
+
+        /* Theme toggle */
+        .theme-toggle {
+            background: none;
+            border: none;
+            color: var(--text-secondary);
+            cursor: pointer;
+            padding: 0.5rem;
+            border-radius: 4px;
+            transition: all 0.2s;
+            font-size: 1.2rem;
+        }
+
+        .theme-toggle:hover {
+            background: #f1f5f9;
+            color: var(--text-primary);
+        }
+
+        [data-theme='dark'] .theme-toggle:hover {
+            background: #374151;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="navbar-brand">
+                <img src="docusaurus/static/img/social-logo.png" alt="Social Marketing Logo" class="logo">
+                Social Marketing
+            </a>
+            <div class="navbar-nav">
+                <a href="#" class="nav-link">Overview</a>
+                <input type="search" class="search-box" placeholder="Search docs...">
+                <button class="theme-toggle" onclick="toggleTheme()" title="Toggle theme">
+                    🌙
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-container">
+            <h1 class="hero-title">Social Marketing</h1>
+            <p class="hero-subtitle">AI-Powered Social Media Management Software</p>
+            <a href="#" class="hero-button">Get Started</a>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="features-container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <span class="feature-emoji">📱</span>
+                    <h3 class="feature-title">Multi-Platform Publishing</h3>
+                    <p class="feature-description">
+                        Post once, publish to many social media accounts. Manage Instagram, 
+                        Facebook, Google Business Profile, X, LinkedIn, and TikTok from one dashboard.
+                    </p>
+                </div>
+                
+                <div class="feature-card">
+                    <span class="feature-emoji">🤖</span>
+                    <h3 class="feature-title">AI-Powered Content Creation</h3>
+                    <p class="feature-description">
+                        Use AI to easily generate content and always stay on-brand. Create engaging 
+                        posts, captions, and visual content that resonates with your audience.
+                    </p>
+                </div>
+                
+                <div class="feature-card">
+                    <span class="feature-emoji">📈</span>
+                    <h3 class="feature-title">Audience Growth Tools</h3>
+                    <p class="feature-description">
+                        Grow your audience and build fans. Monitor engagement and post performance 
+                        to create a content strategy that works.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-links">
+                <a href="#" class="footer-link">Getting started</a>
+                <a href="#" class="footer-link">Documentation</a>
+                <a href="#" class="footer-link">Support</a>
+            </div>
+            <div class="footer-copyright">
+                Copyright © 2024
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleTheme() {
+            const html = document.documentElement;
+            const button = document.querySelector('.theme-toggle');
+            
+            if (html.getAttribute('data-theme') === 'dark') {
+                html.removeAttribute('data-theme');
+                button.textContent = '🌙';
+            } else {
+                html.setAttribute('data-theme', 'dark');
+                button.textContent = '☀️';
+            }
+        }
+    </script>
+</body>
+</html> 

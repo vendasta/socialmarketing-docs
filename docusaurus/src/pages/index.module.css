@@ -8,7 +8,17 @@
   text-align: center;
   position: relative;
   overflow: hidden;
-  --ifm-hero-background-color: #303846;
+  --ifm-hero-background-color: #33ACE2;
+  background: linear-gradient(135deg, #33ACE2 0%, #52bbea 100%);
+  color: white;
+}
+
+.heroBanner .hero__title {
+  text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.heroBanner .hero__subtitle {
+  opacity: 0.95;
 }
 
 @media screen and (max-width: 996px) {
