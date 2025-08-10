@@ -104,7 +104,7 @@ const config: Config = {
           items: [
             {
               label: 'Getting started',
-              to: 'https://docs.socialsmbs.com/getting-started/',
+              to: '/getting-started/',
             },
           ],
         },
