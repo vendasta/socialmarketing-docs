@@ -1,16 +1,16 @@
 ---
-title: Add Another Post – AI-Driven Content Generation for Post Campaign Workflow
-sidebar_label: Add Another Post
+title: Add Posts to Campaigns
+sidebar_label: Add Posts to Campaigns
 description: Use AI to generate additional posts within a Post Campaign without restarting the workflow.
 tags: [social, ai, campaigns, post-creation]
 keywords: [add another post, ai content generation, post campaign workflow]
 ---
 
-## What is Add Another Post?
+## What is the add post feature?
 
-The **Add Another Post** feature allows you to generate additional AI-created posts directly within the Post Campaign workflow. You can now go beyond the preset options of 3, 6, 9, or 12 posts — up to a maximum of 20 posts per campaign — without restarting the process. This makes it easier to create more content within the same campaign seamlessly.
+The **Add Another Post** feature allows you to generate additional AI-created posts directly within the Post Campaign workflow. You can now go beyond the preset options of 3, 6, 9, or 12 posts, up to a maximum of 20 posts per campaign, without restarting the process. This makes it easier to seamlessly create more content within a campaign.
 
-## Why is Add Another Post important?
+## Why is adding posts important?
 
 This feature helps you:
 
@@ -21,14 +21,14 @@ This feature helps you:
 
 By using AI, you can quickly fill out campaign calendars or adjust content volumes based on new needs.
 
-## What’s Included with Add Another Post?
+## What’s included in the add post feature?
 
-- A new 'Add Another Post' button in Step 2 of the Post Campaign workflow  
+- An 'Add Another Post' button in step 2 of the Post Campaign workflow  
 - AI-driven generation of additional posts based on your existing topic  
 - Support for up to 20 total posts per campaign  
 - Seamless integration with the existing campaign content  
 
-## How to Use Add Another Post
+## How to use the add post feature
 
 1. Go to your dashboard and navigate to `Create` → `Post Campaign Workflow`.
 ![Post Campaign](./img/add-another-post/Add-Another-Post-Post-Campaign.png)  
@@ -40,22 +40,22 @@ By using AI, you can quickly fill out campaign calendars or adjust content volum
 ![Post Campaign Number of Posts](./img/add-another-post/Add-Another-Post-Post-Campaign-Number-of-posts.png)  
 5. The AI will generate your first set of posts.
 ![Post Campaign Generated Posts](./img/add-another-post/Add-Another-Post-Post-Campaign-Generated-Posts.png)  
-6. To add more posts, click 'Add Another Post' in Step 2 of the workflow.  
+6. To add more posts, click 'Add Another Post' in step 2 of the workflow.  
 ![Post Campaign Add Another Post Button](./img/add-another-post/Add-Another-Post-Post-Campaign-Add-Another-Post-Button.png)  
-7. The AI will generate additional posts based on your topic from Step 1.  
+7. The AI will generate additional posts based on your topic from step 1.  
 ![Post Campaign Add Another Post AI Content Generation](./img/add-another-post/Add-Another-Post-Post-Campaign-Add-Another-Post-AI-Generation.png)  
 8. You can repeat this process until you reach the maximum of 20 posts.
 ![Post Campaign](./img/add-another-post/Add-Another-Post-Post-Campaign-Add-Another-Post-20-Posts-Generated.png)  
 
-## Limits and Usage Notes
+## Limits and usage notes
 
 :::warning
 The AI generation limit is **20 posts per workflow**. Once this limit is reached, you must start a new workflow to generate additional posts.
 :::
 
-### Post Limits per Workflow
+### Post limits per workflow
 
-| Initial Posts | Additional Posts Allowed | Total Posts per Workflow |
+| Initial posts | Additional posts allowed | Total posts per workflow |
 |----------------|--------------------------|---------------------------|
 | 3              | 17                       | 20                        |
 | 6              | 14                       | 20                        |
@@ -67,12 +67,12 @@ The AI uses the original topic from Step 1 to generate new posts.
 To change tone, content length, or other campaign settings, start a new workflow.
 :::
 
-## Frequently Asked Questions (FAQs)
+## Frequently asked questions
 
 <details>
 <summary>Where can I find the Add Another Post button?</summary>
 
-You’ll find it in Step 2 of the Post Campaign workflow after your initial posts have been generated.
+You’ll find it in step 2 of the Post Campaign workflow after your initial posts have been generated.
 </details>
 
 <details>
@@ -84,7 +84,7 @@ No. The limit is 20 posts per workflow to ensure fair AI resource use.
 <details>
 <summary>Can I change the topic after generating the first set of posts?</summary>
 
-No. The AI continues using the original topic from Step 1 for all additional posts.
+No. The AI continues using the original topic from step 1 for all additional posts.
 </details>
 
 <details>
@@ -118,7 +118,7 @@ No. The feature is included as part of the standard workflow, within the AI gene
 </details>
 
 <details>
-<summary>What if I accidentally click Add Another Post multiple times?</summary>
+<summary>What if I accidentally click 'Add Another Post' multiple times?</summary>
 
 Each click will generate one additional post until the workflow reaches the 20-post maximum.
 </details>
